@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: wheat;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.button-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-section button:hover {
+    background-color: #0056b3;
+}
+
+.game-list-section {
+    margin-bottom: 40px;
+}
+
+.game-list-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat( 3,minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.game-card img {
+    max-width: 75%;
+    height: 50;
+    border-radius: 5px;
+}
+
+.game-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.game-card p {
+    color: #585757;
+}
+
+.game-card button {
+    background-color: #007bff;
+    color: white;
+    border: 5;
+    size: 10;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    align-self: down;
+}
+
+.game-card button:hover {
+    background-color: #0056b3;
+}
+
+.debug-message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeInOut 4s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
